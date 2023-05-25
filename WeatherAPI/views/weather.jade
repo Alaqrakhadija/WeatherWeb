@@ -1,0 +1,22 @@
+extends layout
+block content
+    h1(style="color: aliceblue;padding: 15px 0 0 10px;text-align:center;") Weather for a week
+    div.form-container
+        form(onsubmit="getWeekWeather(event)")
+            label(for="name", style="color:aliceblue;" ) Longitude:
+            input(type="text", id="lon" ,class="input",
+                onfocus="this.classList.add('focused')")
+            label(for="lat" , style="color:aliceblue;") Latitude:
+            input(type="text", id="lat" ,class="input",
+                onfocus="this.classList.add('focused')")
+            input(type="submit", value="Submit", class="submit" )
+    div.conatiner
+        div.data-container
+            
+
+        
+            
+
+  
+  
+
